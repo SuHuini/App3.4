@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Styles">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+        <EditText
+android:id="@+id/price4"
+android:layout_width="100dp"
+android:layout_height="40dp"
+android:layout_marginBottom="1dp"
+android:ems="10"
+android:inputType="textPersonName"
+app:layout_constraintBottom_toTopOf="@+id/price1"
+app:layout_constraintTop_toBottomOf="@+id/price0"
+tools:layout_editor_absoluteX="204dp" />
+
+<RadioButton
+android:id="@+id/braids"
+android:layout_width="150dp"
+android:layout_height="40dp"
+android:layout_marginTop="1dp"
+android:text="Braids"
+app:layout_constraintBottom_toTopOf="@+id/weaves"
+app:layout_constraintTop_toBottomOf="@+id/styles"
+tools:layout_editor_absoluteX="16dp" />
+
+<RadioButton
+android:id="@+id/weaves"
+android:layout_width="150dp"
+android:layout_height="40dp"
+android:text="Weaves"
+app:layout_constraintBottom_toTopOf="@+id/dread"
+app:layout_constraintTop_toBottomOf="@+id/braids"
+tools:layout_editor_absoluteX="16dp" />
+
+<RadioButton
+android:id="@+id/dread"
+android:layout_width="150dp"
+android:layout_height="40dp"
+android:text="Dreadlocks"
+app:layout_constraintBottom_toTopOf="@+id/hairstyling"
+app:layout_constraintTop_toBottomOf="@+id/weaves"
+tools:layout_editor_absoluteX="16dp" />
+
+<RadioButton
+android:id="@+id/hairstyling"
+android:layout_width="150dp"
+android:layout_height="40dp"
+android:layout_marginBottom="14dp"
+android:text="Hairstyling"
+app:layout_constraintBottom_toTopOf="@+id/save"
+app:layout_constraintTop_toBottomOf="@+id/dread"
+tools:layout_editor_absoluteX="16dp" />
+
+<EditText
+android:id="@+id/price1"
+android:layout_width="100dp"
+android:layout_height="40dp"
+android:layout_marginTop="1dp"
+android:ems="10"
+android:inputType="textPersonName"
+app:layout_constraintBottom_toTopOf="@+id/price2"
+app:layout_constraintTop_toBottomOf="@+id/price4"
+tools:layout_editor_absoluteX="206dp" />
+
+<EditText
+android:id="@+id/price2"
+android:layout_width="100dp"
+android:layout_height="40dp"
+android:ems="10"
+android:inputType="textPersonName"
+app:layout_constraintBottom_toTopOf="@+id/price3"
+app:layout_constraintTop_toBottomOf="@+id/price1"
+tools:layout_editor_absoluteX="206dp" />
+
+<EditText
+android:id="@+id/price3"
+android:layout_width="100dp"
+android:layout_height="40dp"
+android:layout_marginBottom="14dp"
+android:ems="10"
+android:inputType="textPersonName"
+app:layout_constraintBottom_toTopOf="@+id/save"
+app:layout_constraintTop_toBottomOf="@+id/price2"
+tools:layout_editor_absoluteX="206dp" />
+
+<TextView
+android:id="@+id/styles"
+android:layout_width="wrap_content"
+android:layout_height="20dp"
+android:text="Styles"
+tools:layout_editor_absoluteX="18dp"
+tools:layout_editor_absoluteY="268dp" />
+
+<TextView
+android:id="@+id/price0"
+android:layout_width="41dp"
+android:layout_height="20dp"
+android:text="Price"
+tools:layout_editor_absoluteX="209dp"
+tools:layout_editor_absoluteY="268dp" />
+</android.support.constraint.ConstraintLayout>

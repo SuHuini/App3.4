@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile">
+
+   <LinearLayout
+       android:id="@+id/linear"
+       android:layout_width="300dp"
+       android:layout_height="450dp"
+       android:layout_marginStart="30dp"
+       android:layout_marginLeft="30dp"
+       android:layout_marginTop="30dp"
+       android:layout_marginEnd="30dp"
+       android:layout_marginRight="30dp"
+       android:layout_marginBottom="8dp"
+       android:orientation="vertical"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent">
+
+
+
+   <!--<EditText-->
+   <!--android:id="@+id/FName"-->
+   <!--android:layout_width="match_parent"-->
+   <!--android:layout_height="wrap_content"-->
+   <!--android:ems="10"-->
+   <!--android:hint="Enter First Name"-->
+   <!--android:inputType="textPersonName"-->
+   <!--android:text="Name" />-->
+   <!---->
+   <!--<EditText-->
+   <!--android:id="@+id/SName"-->
+   <!--android:layout_width="match_parent"-->
+   <!--android:layout_height="wrap_content"-->
+   <!--android:ems="10"-->
+   <!--android:hint="Enter Second Name"-->
+   <!--android:inputType="textPersonName"-->
+   <!--android:text="Name" />-->
+
+   <!--&lt;!&ndash;<EditText&ndash;&gt;-->
+   <!--&lt;!&ndash;android:id="@+id/FName"&ndash;&gt;-->
+   <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+   <!--&lt;!&ndash;android:layout_height="40dp"&ndash;&gt;-->
+   <!--&lt;!&ndash;android:ems="10"&ndash;&gt;-->
+   <!--&lt;!&ndash;android:hint="Enter First Name"&ndash;&gt;-->
+   <!--&lt;!&ndash;android:inputType="textPersonName" />&ndash;&gt;-->
+
+
+   <!--&lt;!&ndash;<EditText&ndash;&gt;-->
+   <!--&lt;!&ndash;android:id="@+id/SName"&ndash;&gt;-->
+   <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+   <!--&lt;!&ndash;android:layout_height="40dp"&ndash;&gt;-->
+   <!--&lt;!&ndash;android:ems="10"&ndash;&gt;-->
+   <!--&lt;!&ndash;android:hint="Enter Second name"&ndash;&gt;-->
+   <!--&lt;!&ndash;android:inputType="textPersonName" />&ndash;&gt;-->
+
+
+   <!--<EditText-->
+   <!--android:id="@+id/email"-->
+   <!--android:layout_width="match_parent"-->
+   <!--android:layout_height="40dp"-->
+   <!--android:ems="10"-->
+   <!--android:hint="Email"-->
+   <!--android:inputType="textEmailAddress" />-->
+
+   <!--<EditText-->
+   <!--android:id="@+id/phone"-->
+   <!--android:layout_width="match_parent"-->
+   <!--android:layout_height="40dp"-->
+   <!--android:ems="10"-->
+   <!--android:hint="Phone number"-->
+   <!--android:inputType="phone" />-->
+
+   <!--<EditText-->
+   <!--android:id="@+id/location"-->
+   <!--android:layout_width="match_parent"-->
+   <!--android:layout_height="40dp"-->
+   <!--android:ems="10"-->
+   <!--android:hint="Location"-->
+   <!--android:inputType="textPersonName" />-->
+
+
+   <!--<EditText-->
+       <!--android:id="@+id/email"-->
+       <!--android:layout_width="match_parent"-->
+       <!--android:layout_height="wrap_content"-->
+       <!--android:ems="10"-->
+       <!--android:hint="Enter your email"-->
+       <!--android:inputType="textEmailAddress" />-->
+
+
+
+   <!--<Button-->
+       <!--android:id="@+id/signup"-->
+       <!--android:layout_width="match_parent"-->
+       <!--android:layout_height="wrap_content"-->
+       <!--android:text="Sign Up" />-->
+
+   <!--<EditText-->
+   <!--android:id="@+id/FName"-->
+   <!--android:layout_width="match_parent"-->
+   <!--android:layout_height="wrap_content"-->
+   <!--android:ems="10"-->
+   <!--android:hint="Enter First Name"-->
+   <!--android:inputType="textPersonName"-->
+   <!--android:text="Name" />-->
+   <!--<EditText-->
+   <!--android:id="@+id/SName"-->
+   <!--android:layout_width="match_parent"-->
+   <!--android:layout_height="wrap_content"-->
+   <!--android:ems="10"-->
+   <!--android:hint="Enter Second Name"-->
+   <!--android:inputType="textPersonName"-->
+   <!--android:text="Name" />-->
+
+   <EditText
+   android:id="@+id/FName"
+   android:layout_width="match_parent"
+   android:layout_height="40dp"
+   android:ems="10"
+   android:hint="Enter First Name"
+   android:inputType="textPersonName" />
+
+
+   <EditText
+   android:id="@+id/SName"
+   android:layout_width="match_parent"
+   android:layout_height="40dp"
+   android:ems="10"
+   android:hint="Enter Second name"
+   android:inputType="textPersonName" />
+
+
+   <EditText
+   android:id="@+id/email"
+   android:layout_width="match_parent"
+   android:layout_height="40dp"
+   android:ems="10"
+   android:hint="Email"
+   android:inputType="textEmailAddress" />
+
+   <EditText
+   android:id="@+id/phone"
+   android:layout_width="match_parent"
+   android:layout_height="40dp"
+   android:ems="10"
+   android:hint="Phone number"
+   android:inputType="phone" />
+
+   <EditText
+   android:id="@+id/location"
+   android:layout_width="match_parent"
+   android:layout_height="40dp"
+   android:ems="10"
+   android:hint="Location"
+   android:inputType="textPersonName" />
+
+   <EditText
+       android:id="@+id/password"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:ems="10"
+       android:hint="Enter your password"
+       android:inputType="textPassword" />
+
+   </LinearLayout>
+
+   <Button
+       android:id="@+id/save"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginStart="118dp"
+       android:layout_marginLeft="118dp"
+       android:layout_marginTop="94dp"
+       android:layout_marginEnd="124dp"
+       android:layout_marginRight="124dp"
+       android:layout_marginBottom="59dp"
+       android:text="Save Details"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.0"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/linear"
+       app:layout_constraintVertical_bias="0.978" />
+
+
+
+    <!--android:onClick="saveDetails"-->
+
+
+</android.support.constraint.ConstraintLayout>

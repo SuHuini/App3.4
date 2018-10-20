@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".signup">
+
+    <!--<Button-->
+        <!--android:id="@+id/button5"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginStart="50dp"-->
+        <!--android:layout_marginLeft="50dp"-->
+        <!--android:layout_marginEnd="276dp"-->
+        <!--android:layout_marginRight="276dp"-->
+        <!--android:layout_marginBottom="10dp"-->
+        <!--android:text="Button"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintHorizontal_bias="0.0"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/editText10" />-->
+
+    <!--<EditText-->
+        <!--android:id="@+id/editText2"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginStart="50dp"-->
+        <!--android:layout_marginLeft="50dp"-->
+        <!--android:layout_marginEnd="119dp"-->
+        <!--android:layout_marginRight="119dp"-->
+        <!--android:layout_marginBottom="4dp"-->
+        <!--android:ems="10"-->
+        <!--android:inputType="textPersonName"-->
+        <!--android:text="Name"-->
+        <!--app:layout_constraintBottom_toTopOf="@+id/textView8"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/textView7" />-->
+
+    <!--<EditText-->
+        <!--android:id="@+id/editText3"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginStart="50dp"-->
+        <!--android:layout_marginLeft="50dp"-->
+        <!--android:layout_marginEnd="119dp"-->
+        <!--android:layout_marginRight="119dp"-->
+        <!--android:layout_marginBottom="8dp"-->
+        <!--android:ems="10"-->
+        <!--android:inputType="textPersonName"-->
+        <!--android:text="Name"-->
+        <!--app:layout_constraintBottom_toTopOf="@+id/textView9"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/textView8" />-->
+
+    <!--<EditText-->
+        <!--android:id="@+id/editText7"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginStart="50dp"-->
+        <!--android:layout_marginLeft="50dp"-->
+        <!--android:layout_marginEnd="119dp"-->
+        <!--android:layout_marginRight="119dp"-->
+        <!--android:layout_marginBottom="8dp"-->
+        <!--android:ems="10"-->
+        <!--android:inputType="textPersonName"-->
+        <!--android:text="Name"-->
+        <!--app:layout_constraintBottom_toTopOf="@+id/textView10"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/textView9" />-->
+
+    <!--<EditText-->
+        <!--android:id="@+id/editText8"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginStart="50dp"-->
+        <!--android:layout_marginLeft="50dp"-->
+        <!--android:layout_marginEnd="119dp"-->
+        <!--android:layout_marginRight="119dp"-->
+        <!--android:layout_marginBottom="6dp"-->
+        <!--android:ems="10"-->
+        <!--android:inputType="textPersonName"-->
+        <!--android:text="Name"-->
+        <!--app:layout_constraintBottom_toTopOf="@+id/textView11"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/textView10" />-->
+
+    <!--<EditText-->
+        <!--android:id="@+id/editText9"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginStart="50dp"-->
+        <!--android:layout_marginLeft="50dp"-->
+        <!--android:layout_marginEnd="119dp"-->
+        <!--android:layout_marginRight="119dp"-->
+        <!--android:layout_marginBottom="5dp"-->
+        <!--android:ems="10"-->
+        <!--android:inputType="textPersonName"-->
+        <!--android:text="Name"-->
+        <!--app:layout_constraintBottom_toTopOf="@+id/textView13"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/textView11" />-->
+
+    <!--<EditText-->
+        <!--android:id="@+id/editText10"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="21dp"-->
+        <!--android:layout_marginStart="50dp"-->
+        <!--android:layout_marginLeft="50dp"-->
+        <!--android:layout_marginEnd="119dp"-->
+        <!--android:layout_marginRight="119dp"-->
+        <!--android:layout_marginBottom="11dp"-->
+        <!--android:ems="10"-->
+        <!--android:inputType="textPersonName"-->
+        <!--android:text="Name"-->
+        <!--app:layout_constraintBottom_toTopOf="@+id/button5"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintHorizontal_bias="0.416"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/textView13" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/textView7"-->
+        <!--android:layout_width="50dp"-->
+        <!--android:layout_height="26dp"-->
+        <!--android:layout_marginStart="70dp"-->
+        <!--android:layout_marginLeft="70dp"-->
+        <!--android:layout_marginTop="25dp"-->
+        <!--android:layout_marginEnd="276dp"-->
+        <!--android:layout_marginRight="276dp"-->
+        <!--android:text="Name"-->
+        <!--app:layout_constraintBottom_toTopOf="@+id/editText2"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent"-->
+        <!--app:layout_constraintVertical_chainStyle="spread_inside" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/textView8"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginStart="50dp"-->
+        <!--android:layout_marginLeft="50dp"-->
+        <!--android:layout_marginTop="4dp"-->
+        <!--android:layout_marginEnd="276dp"-->
+        <!--android:layout_marginRight="276dp"-->
+        <!--android:text="Email"-->
+        <!--app:layout_constraintBottom_toTopOf="@+id/editText3"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/editText2" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/textView9"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginStart="70dp"-->
+        <!--android:layout_marginLeft="70dp"-->
+        <!--android:layout_marginTop="8dp"-->
+        <!--android:layout_marginEnd="276dp"-->
+        <!--android:layout_marginRight="276dp"-->
+        <!--android:text="Password"-->
+        <!--app:layout_constraintBottom_toTopOf="@+id/editText7"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/editText3" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/textView10"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginStart="70dp"-->
+        <!--android:layout_marginLeft="70dp"-->
+        <!--android:layout_marginTop="7dp"-->
+        <!--android:layout_marginEnd="276dp"-->
+        <!--android:layout_marginRight="276dp"-->
+        <!--android:text="Location"-->
+        <!--app:layout_constraintBottom_toTopOf="@+id/editText8"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/editText7" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/textView11"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginStart="50dp"-->
+        <!--android:layout_marginLeft="50dp"-->
+        <!--android:layout_marginTop="8dp"-->
+        <!--android:layout_marginEnd="276dp"-->
+        <!--android:layout_marginRight="276dp"-->
+        <!--android:text="Style"-->
+        <!--app:layout_constraintBottom_toTopOf="@+id/editText9"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/editText8" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/textView13"-->
+        <!--android:layout_width="50dp"-->
+        <!--android:layout_height="20dp"-->
+        <!--android:layout_marginStart="70dp"-->
+        <!--android:layout_marginLeft="70dp"-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--android:layout_marginEnd="276dp"-->
+        <!--android:layout_marginRight="276dp"-->
+        <!--android:text="Price"-->
+        <!--app:layout_constraintBottom_toTopOf="@+id/editText10"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/editText9" />-->
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="322dp"
+        android:layout_height="247dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Username"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="130dp"
+        android:layout_marginRight="130dp"
+        android:layout_marginBottom="135dp"
+        android:text="SIGN UP"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+</android.support.constraint.ConstraintLayout>
