@@ -4,190 +4,220 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Profile">
+    tools:context=".HairdresserProfile">
 
-   <LinearLayout
-       android:id="@+id/linear"
-       android:layout_width="300dp"
-       android:layout_height="450dp"
-       android:layout_marginStart="30dp"
-       android:layout_marginLeft="30dp"
-       android:layout_marginTop="30dp"
-       android:layout_marginEnd="30dp"
-       android:layout_marginRight="30dp"
-       android:layout_marginBottom="8dp"
-       android:orientation="vertical"
-       app:layout_constraintBottom_toBottomOf="parent"
-       app:layout_constraintEnd_toEndOf="parent"
-       app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintTop_toTopOf="parent">
-
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="300dp"
+        android:layout_height="261dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6">
 
 
-   <!--<EditText-->
-   <!--android:id="@+id/FName"-->
-   <!--android:layout_width="match_parent"-->
-   <!--android:layout_height="wrap_content"-->
-   <!--android:ems="10"-->
-   <!--android:hint="Enter First Name"-->
-   <!--android:inputType="textPersonName"-->
-   <!--android:text="Name" />-->
-   <!---->
-   <!--<EditText-->
-   <!--android:id="@+id/SName"-->
-   <!--android:layout_width="match_parent"-->
-   <!--android:layout_height="wrap_content"-->
-   <!--android:ems="10"-->
-   <!--android:hint="Enter Second Name"-->
-   <!--android:inputType="textPersonName"-->
-   <!--android:text="Name" />-->
+        <!--<EditText-->
+        <!--android:id="@+id/FName"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:ems="10"-->
+        <!--android:hint="Enter First Name"-->
+        <!--android:inputType="textPersonName"-->
+        <!--android:text="Name" />-->
+        <!---->
+        <!--<EditText-->
+        <!--android:id="@+id/SName"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:ems="10"-->
+        <!--android:hint="Enter Second Name"-->
+        <!--android:inputType="textPersonName"-->
+        <!--android:text="Name" />-->
 
-   <!--&lt;!&ndash;<EditText&ndash;&gt;-->
-   <!--&lt;!&ndash;android:id="@+id/FName"&ndash;&gt;-->
-   <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
-   <!--&lt;!&ndash;android:layout_height="40dp"&ndash;&gt;-->
-   <!--&lt;!&ndash;android:ems="10"&ndash;&gt;-->
-   <!--&lt;!&ndash;android:hint="Enter First Name"&ndash;&gt;-->
-   <!--&lt;!&ndash;android:inputType="textPersonName" />&ndash;&gt;-->
-
-
-   <!--&lt;!&ndash;<EditText&ndash;&gt;-->
-   <!--&lt;!&ndash;android:id="@+id/SName"&ndash;&gt;-->
-   <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
-   <!--&lt;!&ndash;android:layout_height="40dp"&ndash;&gt;-->
-   <!--&lt;!&ndash;android:ems="10"&ndash;&gt;-->
-   <!--&lt;!&ndash;android:hint="Enter Second name"&ndash;&gt;-->
-   <!--&lt;!&ndash;android:inputType="textPersonName" />&ndash;&gt;-->
+        <!--&lt;!&ndash;<EditText&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/FName"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="40dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:ems="10"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:hint="Enter First Name"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:inputType="textPersonName" />&ndash;&gt;-->
 
 
-   <!--<EditText-->
-   <!--android:id="@+id/email"-->
-   <!--android:layout_width="match_parent"-->
-   <!--android:layout_height="40dp"-->
-   <!--android:ems="10"-->
-   <!--android:hint="Email"-->
-   <!--android:inputType="textEmailAddress" />-->
-
-   <!--<EditText-->
-   <!--android:id="@+id/phone"-->
-   <!--android:layout_width="match_parent"-->
-   <!--android:layout_height="40dp"-->
-   <!--android:ems="10"-->
-   <!--android:hint="Phone number"-->
-   <!--android:inputType="phone" />-->
-
-   <!--<EditText-->
-   <!--android:id="@+id/location"-->
-   <!--android:layout_width="match_parent"-->
-   <!--android:layout_height="40dp"-->
-   <!--android:ems="10"-->
-   <!--android:hint="Location"-->
-   <!--android:inputType="textPersonName" />-->
+        <!--&lt;!&ndash;<EditText&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/SName"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="40dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:ems="10"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:hint="Enter Second name"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:inputType="textPersonName" />&ndash;&gt;-->
 
 
-   <!--<EditText-->
-       <!--android:id="@+id/email"-->
-       <!--android:layout_width="match_parent"-->
-       <!--android:layout_height="wrap_content"-->
-       <!--android:ems="10"-->
-       <!--android:hint="Enter your email"-->
-       <!--android:inputType="textEmailAddress" />-->
+        <!--<EditText-->
+        <!--android:id="@+id/email"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:ems="10"-->
+        <!--android:hint="Email"-->
+        <!--android:inputType="textEmailAddress" />-->
+
+        <!--<EditText-->
+        <!--android:id="@+id/phone"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:ems="10"-->
+        <!--android:hint="Phone number"-->
+        <!--android:inputType="phone" />-->
+
+        <!--<EditText-->
+        <!--android:id="@+id/location"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:ems="10"-->
+        <!--android:hint="Location"-->
+        <!--android:inputType="textPersonName" />-->
 
 
-
-   <!--<Button-->
-       <!--android:id="@+id/signup"-->
-       <!--android:layout_width="match_parent"-->
-       <!--android:layout_height="wrap_content"-->
-       <!--android:text="Sign Up" />-->
-
-   <!--<EditText-->
-   <!--android:id="@+id/FName"-->
-   <!--android:layout_width="match_parent"-->
-   <!--android:layout_height="wrap_content"-->
-   <!--android:ems="10"-->
-   <!--android:hint="Enter First Name"-->
-   <!--android:inputType="textPersonName"-->
-   <!--android:text="Name" />-->
-   <!--<EditText-->
-   <!--android:id="@+id/SName"-->
-   <!--android:layout_width="match_parent"-->
-   <!--android:layout_height="wrap_content"-->
-   <!--android:ems="10"-->
-   <!--android:hint="Enter Second Name"-->
-   <!--android:inputType="textPersonName"-->
-   <!--android:text="Name" />-->
-
-   <EditText
-   android:id="@+id/FName"
-   android:layout_width="match_parent"
-   android:layout_height="40dp"
-   android:ems="10"
-   android:hint="Enter First Name"
-   android:inputType="textPersonName" />
+        <!--<EditText-->
+        <!--android:id="@+id/email"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:ems="10"-->
+        <!--android:hint="Enter your email"-->
+        <!--android:inputType="textEmailAddress" />-->
 
 
-   <EditText
-   android:id="@+id/SName"
-   android:layout_width="match_parent"
-   android:layout_height="40dp"
-   android:ems="10"
-   android:hint="Enter Second name"
-   android:inputType="textPersonName" />
+        <!--<Button-->
+        <!--android:id="@+id/signup"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Sign Up" />-->
+
+        <!--<EditText-->
+        <!--android:id="@+id/FName"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:ems="10"-->
+        <!--android:hint="Enter First Name"-->
+        <!--android:inputType="textPersonName"-->
+        <!--android:text="Name" />-->
+        <!--<EditText-->
+        <!--android:id="@+id/SName"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:ems="10"-->
+        <!--android:hint="Enter Second Name"-->
+        <!--android:inputType="textPersonName"-->
+        <!--android:text="Name" />-->
+
+        <EditText
+            android:id="@+id/FName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:hint="Enter First Name"
+            android:inputType="textPersonName" />
 
 
-   <EditText
-   android:id="@+id/email"
-   android:layout_width="match_parent"
-   android:layout_height="40dp"
-   android:ems="10"
-   android:hint="Email"
-   android:inputType="textEmailAddress" />
+        <EditText
+            android:id="@+id/SName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:hint="Enter Second name"
+            android:inputType="textPersonName" />
 
-   <EditText
-   android:id="@+id/phone"
-   android:layout_width="match_parent"
-   android:layout_height="40dp"
-   android:ems="10"
-   android:hint="Phone number"
-   android:inputType="phone" />
 
-   <EditText
-   android:id="@+id/location"
-   android:layout_width="match_parent"
-   android:layout_height="40dp"
-   android:ems="10"
-   android:hint="Location"
-   android:inputType="textPersonName" />
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress" />
 
-   <EditText
-       android:id="@+id/password"
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       android:ems="10"
-       android:hint="Enter your password"
-       android:inputType="textPassword" />
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:hint="Phone number"
+            android:inputType="phone" />
 
-   </LinearLayout>
+        <EditText
+            android:id="@+id/location"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:hint="Location"
+            android:inputType="textPersonName" />
 
-   <Button
-       android:id="@+id/save"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:layout_marginStart="118dp"
-       android:layout_marginLeft="118dp"
-       android:layout_marginTop="94dp"
-       android:layout_marginEnd="124dp"
-       android:layout_marginRight="124dp"
-       android:layout_marginBottom="59dp"
-       android:text="Save Details"
-       app:layout_constraintBottom_toBottomOf="parent"
-       app:layout_constraintEnd_toEndOf="parent"
-       app:layout_constraintHorizontal_bias="0.0"
-       app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintTop_toBottomOf="@+id/linear"
-       app:layout_constraintVertical_bias="0.978" />
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter your password"
+            android:inputType="textPassword" />
 
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="131dp"
+        android:layout_marginLeft="131dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="129dp"
+        android:layout_marginRight="129dp"
+        android:layout_marginBottom="78dp"
+        android:text="Save Details"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/styles" />
+
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginRight="150dp"
+        android:layout_marginBottom="9dp"
+        android:text="HairdresserRegister"
+        android:textColor="#000080"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/linear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/styles"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="218dp"
+        android:layout_marginLeft="218dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginRight="42dp"
+        android:layout_marginBottom="19dp"
+        android:text="Input styles"
+        android:onClick="styles"
+        app:layout_constraintBottom_toTopOf="@+id/save"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linear" />
 
 
     <!--android:onClick="saveDetails"-->
