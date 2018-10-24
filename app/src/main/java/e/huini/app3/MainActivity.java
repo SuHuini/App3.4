@@ -17,30 +17,24 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 //        Log.i(TAG, "onCreate");
     }
-    public void log(View v){
+    public void btn(View v){
         Intent i = new Intent(this,LoginActivity.class);
         startActivity(i);
     }
-    public void log1(View v){
-        Intent i = new Intent(this,Search.class);
-        startActivity(i);
-    }
-    public void log2(View v){
-        Intent i = new Intent(this,Feedback.class);
-        startActivity(i);
-    }
-    public void log3(View v){
+
+    public void btn3(View v){
         Intent i = new Intent(this,SignUp.class);
         startActivity(i);
     }
-    public void log4(View v){
-        Intent i = new Intent(this,Profile.class);
-        startActivity(i);
-    }
-    public void log5(View v){
-        Intent i = new Intent(this,SignIn.class);
-        startActivity(i);
-    }
+
+//    public void log5(View v){
+//        Intent i = new Intent(this,SignIn.class);
+//        startActivity(i);
+//    }
+//public void log4(View v){
+//        Intent i = new Intent(this,Profile.class);
+//        startActivity(i);
+//    }
 //
 //    @Override
 //    protected void onStart() {

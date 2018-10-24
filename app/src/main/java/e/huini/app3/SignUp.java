@@ -1,6 +1,7 @@
 package e.huini.app3;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -9,6 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -22,6 +24,8 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener{
     private EditText username;
     private EditText email;
     private EditText  password;
+    private Button hairdresser;
+    private TextView hairdresser1;
 
 //    private ProgressBar bar;
 
@@ -38,6 +42,8 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener{
         username = (EditText) findViewById(R.id.username);
              email = (EditText) findViewById(R.id.email);
          password = (EditText) findViewById(R.id.password);
+         hairdresser = (Button) findViewById(R.id.hairdresser);
+         hairdresser1 = (TextView)  findViewById(R.id.hairdresser1);
 
     register.setOnClickListener(this);
 
@@ -51,7 +57,6 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener{
 // || TextUtils.isEmpty(s)
                 ){
             Toast.makeText(this,"Please fill in all fields",Toast.LENGTH_SHORT).show();
-                    //
             return;
         }
 
@@ -74,7 +79,12 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener{
         if (v == register) {
             registerUser();
         }
-
+        else if (v == hairdresser) {
+                    startActivity(new Intent(this, HairdresserProfile.class));
+                }
+        else if (v == hairdresser1) {
+            startActivity(new Intent(this, HairdresserProfile.class));
+        }
     }
 
 }
