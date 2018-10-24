@@ -2,6 +2,8 @@
 package e.huini.app3;
 
 public class Hairdresser {
+
+    int hairdresserID;
    String FName,SName, location;
    String email;
    String phone;
@@ -12,10 +14,10 @@ public class Hairdresser {
         this.FName = FName;
         this.SName = SName;
         this.location = location;
-//        this.styles = styles;
+
         this.email = email;
         this.phone = phone;
-//        this.price = price;
+
         this.password = password;
     }
     public String getFName() {
@@ -30,10 +32,6 @@ public class Hairdresser {
         return location;
     }
 
-//    public String getStyles() {
-//        return styles;
-//    }
-
     public String getEmail() {
         return email;
     }
@@ -42,20 +40,9 @@ public class Hairdresser {
         return phone;
     }
 
-//    public String getPrice() {
-//        return price;
-//    }
-
     public String getPassword() {
         return password;
     }
 
-//    public Hairdresser(){
-//
-////       this.FName = FName;
-////       this.SName = SName;
-//
-//
-//   }
 
 }
