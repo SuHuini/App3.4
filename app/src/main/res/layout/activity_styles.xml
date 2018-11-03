@@ -6,106 +6,217 @@
     android:layout_height="match_parent"
     tools:context=".Styles">
 
+        <TextView
+            android:id="@+id/styles2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="190dp"
+            android:layout_marginRight="190dp"
+            android:layout_marginBottom="3dp"
+            android:text="Styles and Prices"
+            android:textColor="#000080"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/style"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" />
+            android:id="@+id/style"
+            android:layout_width="159dp"
+            android:layout_height="244dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="46dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="221dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/price"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/styles"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:text="Styles"
+                    tools:layout_editor_absoluteX="18dp"
+                    tools:layout_editor_absoluteY="268dp" />
+
+
+                <RadioButton
+                    android:id="@+id/braids"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="1dp"
+                    android:text="Braids"
+                    app:layout_constraintBottom_toTopOf="@+id/weaves"
+                    app:layout_constraintTop_toBottomOf="@+id/styles"
+                    tools:layout_editor_absoluteX="16dp" />
+
+                <RadioButton
+                    android:id="@+id/weaves"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:text="Weaves"
+                    app:layout_constraintBottom_toTopOf="@+id/dread"
+                    app:layout_constraintTop_toBottomOf="@+id/braids"
+                    tools:layout_editor_absoluteX="16dp" />
+
+                <RadioButton
+                    android:id="@+id/dread"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:text="Dreadlocks"
+                    app:layout_constraintBottom_toTopOf="@+id/relaxing"
+                    app:layout_constraintTop_toBottomOf="@+id/weaves"
+                    tools:layout_editor_absoluteX="16dp" />
+
+                <RadioButton
+                    android:id="@+id/relaxing"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="14dp"
+                    android:text="HairRelaxing"
+                    app:layout_constraintBottom_toTopOf="@+id/save"
+                    app:layout_constraintTop_toBottomOf="@+id/dread"
+                    tools:layout_editor_absoluteX="16dp" />
+
+                <RadioButton
+                    android:id="@+id/dyeing"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:text="HairDyeing"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="449dp" />
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/price"
+        android:layout_width="154dp"
+        android:layout_height="242dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="62dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginRight="9dp"
+        android:layout_marginBottom="238dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/style"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/price0"
+            android:layout_width="41dp"
+            android:layout_height="20dp"
+            android:text="Price"
+            tools:layout_editor_absoluteX="209dp"
+            tools:layout_editor_absoluteY="268dp" />
+
+
         <EditText
-android:id="@+id/price4"
-android:layout_width="100dp"
-android:layout_height="40dp"
-android:layout_marginBottom="1dp"
-android:ems="10"
-android:inputType="textPersonName"
-app:layout_constraintBottom_toTopOf="@+id/price1"
-app:layout_constraintTop_toBottomOf="@+id/price0"
-tools:layout_editor_absoluteX="204dp" />
+            android:id="@+id/price4"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginEnd="54dp"
+            android:layout_marginRight="54dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/price1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/braids"
+            app:layout_constraintTop_toBottomOf="@+id/price0" />
 
-<RadioButton
-android:id="@+id/braids"
-android:layout_width="150dp"
-android:layout_height="40dp"
-android:layout_marginTop="1dp"
-android:text="Braids"
-app:layout_constraintBottom_toTopOf="@+id/weaves"
-app:layout_constraintTop_toBottomOf="@+id/styles"
-tools:layout_editor_absoluteX="16dp" />
+        <EditText
+            android:id="@+id/price1"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="54dp"
+            android:layout_marginRight="54dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/price2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/weaves"
+            app:layout_constraintTop_toBottomOf="@+id/price4" />
 
-<RadioButton
-android:id="@+id/weaves"
-android:layout_width="150dp"
-android:layout_height="40dp"
-android:text="Weaves"
-app:layout_constraintBottom_toTopOf="@+id/dread"
-app:layout_constraintTop_toBottomOf="@+id/braids"
-tools:layout_editor_absoluteX="16dp" />
+        <EditText
+            android:id="@+id/price2"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginEnd="54dp"
+            android:layout_marginRight="54dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/price3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/dread"
+            app:layout_constraintTop_toBottomOf="@+id/price1" />
 
-<RadioButton
-android:id="@+id/dread"
-android:layout_width="150dp"
-android:layout_height="40dp"
-android:text="Dreadlocks"
-app:layout_constraintBottom_toTopOf="@+id/hairstyling"
-app:layout_constraintTop_toBottomOf="@+id/weaves"
-tools:layout_editor_absoluteX="16dp" />
+        <EditText
+            android:id="@+id/price3"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginEnd="54dp"
+            android:layout_marginRight="54dp"
+            android:layout_marginBottom="14dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/save"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/relaxing"
+            app:layout_constraintTop_toBottomOf="@+id/price2" />
 
-<RadioButton
-android:id="@+id/hairstyling"
-android:layout_width="150dp"
-android:layout_height="40dp"
-android:layout_marginBottom="14dp"
-android:text="Hairstyling"
-app:layout_constraintBottom_toTopOf="@+id/save"
-app:layout_constraintTop_toBottomOf="@+id/dread"
-tools:layout_editor_absoluteX="16dp" />
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginEnd="54dp"
+            android:layout_marginRight="54dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/dyeing"
+            app:layout_constraintTop_toBottomOf="@+id/price3" />
 
-<EditText
-android:id="@+id/price1"
-android:layout_width="100dp"
-android:layout_height="40dp"
-android:layout_marginTop="1dp"
-android:ems="10"
-android:inputType="textPersonName"
-app:layout_constraintBottom_toTopOf="@+id/price2"
-app:layout_constraintTop_toBottomOf="@+id/price4"
-tools:layout_editor_absoluteX="206dp" />
 
-<EditText
-android:id="@+id/price2"
-android:layout_width="100dp"
-android:layout_height="40dp"
-android:ems="10"
-android:inputType="textPersonName"
-app:layout_constraintBottom_toTopOf="@+id/price3"
-app:layout_constraintTop_toBottomOf="@+id/price1"
-tools:layout_editor_absoluteX="206dp" />
+    </LinearLayout>
 
-<EditText
-android:id="@+id/price3"
-android:layout_width="100dp"
-android:layout_height="40dp"
-android:layout_marginBottom="14dp"
-android:ems="10"
-android:inputType="textPersonName"
-app:layout_constraintBottom_toTopOf="@+id/save"
-app:layout_constraintTop_toBottomOf="@+id/price2"
-tools:layout_editor_absoluteX="206dp" />
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="148dp"
+        android:layout_marginLeft="148dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="155dp"
+        android:layout_marginRight="155dp"
+        android:layout_marginBottom="155dp"
+        android:text="SAVE"
+        android:onClick= "saveStyles"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/style" />
 
-<TextView
-android:id="@+id/styles"
-android:layout_width="wrap_content"
-android:layout_height="20dp"
-android:text="Styles"
-tools:layout_editor_absoluteX="18dp"
-tools:layout_editor_absoluteY="268dp" />
 
-<TextView
-android:id="@+id/price0"
-android:layout_width="41dp"
-android:layout_height="20dp"
-android:text="Price"
-tools:layout_editor_absoluteX="209dp"
-tools:layout_editor_absoluteY="268dp" />
 </android.support.constraint.ConstraintLayout>
