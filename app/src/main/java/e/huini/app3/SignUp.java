@@ -23,7 +23,11 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
     private Button register;
     private EditText username;
     private EditText email;
+<<<<<<< HEAD
     private EditText password;
+=======
+    private EditText  password;
+>>>>>>> 6248a17b502cdc53ce0df6218dcbcaf2877e515c
     private Button hairdresser;
     private TextView hairdresser1;
 
@@ -40,10 +44,17 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
         firebaseAuth = FirebaseAuth.getInstance();
         register = (Button) findViewById(R.id.register);
         username = (EditText) findViewById(R.id.username);
+<<<<<<< HEAD
         email = (EditText) findViewById(R.id.email);
         password = (EditText) findViewById(R.id.password);
         hairdresser = (Button) findViewById(R.id.hairdresser);
         hairdresser1 = (TextView) findViewById(R.id.hairdresser1);
+=======
+             email = (EditText) findViewById(R.id.email);
+         password = (EditText) findViewById(R.id.password);
+         hairdresser = (Button) findViewById(R.id.hairdresser);
+         hairdresser1 = (TextView)  findViewById(R.id.hairdresser1);
+>>>>>>> 6248a17b502cdc53ce0df6218dcbcaf2877e515c
 
         register.setOnClickListener(this);
         hairdresser1.setOnClickListener(this);
@@ -58,8 +69,13 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
         String p = password.getText().toString().trim();
         if (TextUtils.isEmpty(e) || TextUtils.isEmpty(p) || TextUtils.isEmpty(u)
 // || TextUtils.isEmpty(s)
+<<<<<<< HEAD
                 ) {
             Toast.makeText(this, "Please fill in all fields", Toast.LENGTH_SHORT).show();
+=======
+                ){
+            Toast.makeText(this,"Please fill in all fields",Toast.LENGTH_SHORT).show();
+>>>>>>> 6248a17b502cdc53ce0df6218dcbcaf2877e515c
             return;
         }
 
@@ -85,6 +101,15 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
         } else if (v == hairdresser1) {
             startActivity(new Intent(this, HairdresserProfile.class));
         }
+<<<<<<< HEAD
+=======
+        else if (v == hairdresser) {
+                    startActivity(new Intent(this, HairdresserProfile.class));
+                }
+        else if (v == hairdresser1) {
+            startActivity(new Intent(this, HairdresserProfile.class));
+        }
+>>>>>>> 6248a17b502cdc53ce0df6218dcbcaf2877e515c
     }
 }
 
