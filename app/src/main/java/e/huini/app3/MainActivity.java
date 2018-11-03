@@ -27,27 +27,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i);
     }
 
-<<<<<<< HEAD
     public void btn4(View v){
         Intent i = new Intent(this,SearchResults.class);
         startActivity(i);
     }
 
-=======
-<<<<<<< HEAD
-=======
-    public void btn5(View v){
-        Intent i = new Intent(this,HairdresserProfile.class);
-        startActivity(i);
-    }
-
-    public void btn4(View v){
-        Intent i = new Intent(this,Styles.class);
-        startActivity(i);
-    }
-
->>>>>>> bb5527c50760e8736e050ec1dd6716bc9b786fac
->>>>>>> 6248a17b502cdc53ce0df6218dcbcaf2877e515c
 //    public void log5(View v){
 //        Intent i = new Intent(this,SignIn.class);
 //        startActivity(i);

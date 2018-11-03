@@ -21,7 +21,6 @@ public class Hairdresser {
 //        password = password;
 //    }
 
-<<<<<<< HEAD
 
     public Hairdresser() {
     }
@@ -32,18 +31,6 @@ public class Hairdresser {
 
     public void setHairdresserID(int hairdresserID) {
         this.hairdresserID = hairdresserID;
-=======
-    public Hairdresser (String FName, String SName, String location,
-                        String email, String phone, String password) {
-        this.FName = FName;
-        this.SName = SName;
-        this.location = location;
-
-        this.email = email;
-        this.phone = phone;
-
-        this.password = password;
->>>>>>> 6248a17b502cdc53ce0df6218dcbcaf2877e515c
     }
 
     public String getFName() {
@@ -66,13 +53,10 @@ public class Hairdresser {
         return location;
     }
 
-<<<<<<< HEAD
     public void setLocation(String location) {
         this.location = location;
     }
 
-=======
->>>>>>> 6248a17b502cdc53ce0df6218dcbcaf2877e515c
     public String getEmail() {
         return email;
     }
@@ -85,25 +69,19 @@ public class Hairdresser {
         return phone;
     }
 
-<<<<<<< HEAD
     public void setPhone(String phone) {
         this.phone = phone;
     }
 
-=======
->>>>>>> 6248a17b502cdc53ce0df6218dcbcaf2877e515c
     public String getPassword() {
         return password;
     }
 
-<<<<<<< HEAD
     public void setPassword(String password) {
         this.password = password;
     }
 
 
 
-=======
->>>>>>> 6248a17b502cdc53ce0df6218dcbcaf2877e515c
 
 }
