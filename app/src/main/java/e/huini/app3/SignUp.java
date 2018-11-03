@@ -1,6 +1,7 @@
 package e.huini.app3;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -9,6 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -16,12 +18,14 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
-public class SignUp extends AppCompatActivity implements View.OnClickListener{
+public class SignUp extends AppCompatActivity implements View.OnClickListener {
 
     private Button register;
     private EditText username;
     private EditText email;
-    private EditText  password;
+    private EditText password;
+    private Button hairdresser;
+    private TextView hairdresser1;
 
 //    private ProgressBar bar;
 
@@ -36,48 +40,64 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener{
         firebaseAuth = FirebaseAuth.getInstance();
         register = (Button) findViewById(R.id.register);
         username = (EditText) findViewById(R.id.username);
-             email = (EditText) findViewById(R.id.email);
-         password = (EditText) findViewById(R.id.password);
+        email = (EditText) findViewById(R.id.email);
+        password = (EditText) findViewById(R.id.password);
+        hairdresser = (Button) findViewById(R.id.hairdresser);
+        hairdresser1 = (TextView) findViewById(R.id.hairdresser1);
 
-    register.setOnClickListener(this);
+        register.setOnClickListener(this);
+        hairdresser1.setOnClickListener(this);
+        hairdresser.setOnClickListener(this);
 
 
     }
-    private void registerUser(){
+
+    private void registerUser() {
         String u = username.getText().toString().trim();
         String e = email.getText().toString().trim();
-        String p  = password.getText().toString().trim();
-        if(TextUtils.isEmpty(e)|| TextUtils.isEmpty(p)|| TextUtils.isEmpty(u)
+        String p = password.getText().toString().trim();
+        if (TextUtils.isEmpty(e) || TextUtils.isEmpty(p) || TextUtils.isEmpty(u)
 // || TextUtils.isEmpty(s)
-                ){
-            Toast.makeText(this,"Please fill in all fields",Toast.LENGTH_SHORT).show();
-                    //
+                ) {
+            Toast.makeText(this, "Please fill in all fields", Toast.LENGTH_SHORT).show();
             return;
         }
 
-    firebaseAuth.createUserWithEmailAndPassword(e,p)
-            .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
-                @Override
-                public void onComplete(@NonNull Task<AuthResult> task) {
-                        if(task.isSuccessful()){
+        firebaseAuth.createUserWithEmailAndPassword(e, p)
+                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        if (task.isSuccessful()) {
                             Toast.makeText(SignUp.this, "Successful registration", Toast.LENGTH_SHORT).show();
-                        }
-                        else{
+                        } else {
                             Toast.makeText(SignUp.this, "Unable to register. Please try again", Toast.LENGTH_SHORT).show();
                         }
-                }
-            });
+                    }
+                });
     }
 
-        @Override
-        public void onClick (View v){
+    @Override
+    public void onClick(View v) {
         if (v == register) {
             registerUser();
+        } else if (v == hairdresser) {
+            startActivity(new Intent(this, HairdresserProfile.class));
+        } else if (v == hairdresser1) {
+            startActivity(new Intent(this, HairdresserProfile.class));
         }
-
     }
-
 }
+
+
+
+
+
+
+
+
+
+
+
 //package e.huini.app3;
 //
 //import android.content.Intent;
