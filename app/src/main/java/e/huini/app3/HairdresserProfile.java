@@ -66,6 +66,14 @@ public class HairdresserProfile extends AppCompatActivity {
         styles = (Button) findViewById(R.id.styles);
 
 
+        saveUser.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                saveUser();
+            }
+        });
+
+
 //        FirebaseUser user = firebaseAuth.getCurrentUser();
 //        userEmail = (TextView) findViewById(R.id.email);
 //        userEmail.setText( user.getEmail());
@@ -94,7 +102,7 @@ public class HairdresserProfile extends AppCompatActivity {
 
     }
 
-    public void saveUser(View v) {
+    public void saveUser() {
         databaseHairdresser.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {

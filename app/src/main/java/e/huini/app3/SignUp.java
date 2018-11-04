@@ -18,7 +18,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
-public class SignUp extends AppCompatActivity implements View.OnClickListener {
+public  class SignUp extends AppCompatActivity  {
 
     private Button register;
     private EditText username;
@@ -45,12 +45,28 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
         hairdresser = (Button) findViewById(R.id.hairdresser);
         hairdresser1 = (TextView) findViewById(R.id.hairdresser1);
 
-        register.setOnClickListener(this);
-        hairdresser1.setOnClickListener(this);
-        hairdresser.setOnClickListener(this);
-
-
+        register.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                registerUser();
+            }
+        });
+        hairdresser1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(SignUp.this, HairdresserProfile.class);
+                startActivity(i);
+            }
+        });
+        hairdresser.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(SignUp.this, HairdresserProfile.class);
+                startActivity(i);
+            }
+        });
     }
+
 
     private void registerUser() {
         String u = username.getText().toString().trim();
@@ -75,18 +91,33 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
                     }
                 });
     }
+//
+//    public void onClick(View v){
+//        if(v == register){
+//            registerUser();
+//        }
+//        else if(v == hairdresser){
+//        Intent i = new Intent(SignUp.this, HairdresserProfile.class);
+//        startActivity(i);
+//    } else if (v == hairdresser1){
+//                Intent i = new Intent(SignUp.this, HairdresserProfile.class);
+//                startActivity(i);
+//            }
+//    }
 
-    @Override
-    public void onClick(View v) {
-        if (v == register) {
-            registerUser();
-        } else if (v == hairdresser) {
-            startActivity(new Intent(this, HairdresserProfile.class));
-        } else if (v == hairdresser1) {
-            startActivity(new Intent(this, HairdresserProfile.class));
-        }
-    }
 }
+//
+//    @Override
+//    public void onClick(View v) {
+//        if (v == register) {
+//            registerUser();
+//        } else if (v == hairdresser) {
+//            startActivity(new Intent(this, HairdresserProfile.class));
+//        } else if (v == hairdresser1) {
+//            startActivity(new Intent(this, HairdresserProfile.class));
+//        }
+//    }
+
 
 
 
