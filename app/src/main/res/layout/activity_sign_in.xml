@@ -67,11 +67,7 @@
         android:layout_marginTop="30dp"
         android:layout_marginEnd="130dp"
         android:layout_marginRight="130dp"
-<<<<<<< HEAD
         android:layout_marginBottom="20dp"
-=======
-        android:layout_marginBottom="70dp"
->>>>>>> e74b988d128a64d844e974f8f85222874567cd74
         android:text="LOGIN"
         app:layout_constraintBottom_toTopOf="@+id/signup"
         app:layout_constraintEnd_toEndOf="parent"

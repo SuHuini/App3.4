@@ -66,11 +66,7 @@ public class HairdresserProfile extends AppCompatActivity {
         styles = (Button) findViewById(R.id.styles);
 
 
-<<<<<<< HEAD
         save.setOnClickListener(new OnClickListener() {
-=======
-        saveUser.setOnClickListener(new OnClickListener() {
->>>>>>> e74b988d128a64d844e974f8f85222874567cd74
             @Override
             public void onClick(View v) {
                 saveUser();
