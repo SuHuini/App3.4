@@ -32,7 +32,8 @@
         <activity android:name=".Styles" />
         <activity android:name=".SignIn" />
         <activity android:name=".TestActivity" />
-        <activity android:name=".SearchResults"></activity>
+        <activity android:name=".SearchResults" />
+        <activity android:name=".Hairtest"></activity>
     </application>
 
 </manifest>

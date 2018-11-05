@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.*;
 //import android.widget.EditText;
@@ -11,13 +12,15 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 
 public class SignIn extends AppCompatActivity {
-     EditText email;
-     EditText password;
+
+   private   EditText email;
+   private   EditText password;
     private FirebaseAuth firebaseAuth;
-    Button login;
+    private Button login;
+    private TextView signup;
+    private FirebaseAuth.AuthStateListener authListener;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,26 +31,40 @@ public class SignIn extends AppCompatActivity {
         password = (EditText) findViewById(R.id.password);
 
         firebaseAuth = FirebaseAuth.getInstance();
+        login = (Button) findViewById(R.id.login) ;
+        signup = (TextView)  findViewById(R.id.signup);
 
-//        FirebaseUser user = firebaseAuth.getCurrentUser();
-//
-//        if(user != null){
-//            finish();
-//            startActivity(new Intent(SignIn.this, Search.class));
-//        }
+        signup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(SignIn.this, SignUp.class);
+                startActivity(i);
+            }
+        });
+
+        authListener = new FirebaseAuth.AuthStateListener() {
+             @Override
+             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
+                 if (firebaseAuth.getCurrentUser() != null) {
+                     finish();
+                     startActivity(new Intent(SignIn.this, Search.class));
+                 }
+             }
+         };
+
 
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 validate(email.getText().toString(), password.getText().toString());
-
-
             }
         });
     }
     private void validate(String email, String password){
-
-        firebaseAuth.createUserWithEmailAndPassword(email,password)
+        if(TextUtils.isEmpty(email) || TextUtils.isEmpty(password)){
+            Toast.makeText(SignIn.this,"Please fill in all fields", Toast.LENGTH_LONG).show();
+        } else {
+        firebaseAuth.signInWithEmailAndPassword(email,password)
                 .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
@@ -60,4 +77,21 @@ public class SignIn extends AppCompatActivity {
                     }
                 });
     }
+    }
+
 }
+
+
+
+//
+//        public void onStart(){
+//        super.onStart();
+//        FirebaseUser user = firebaseAuth.getCurrentUser();
+//
+//        if(user != null)
+//        {
+//            finish();
+//            startActivity(new Intent(SignIn.this, Search.class));
+//
+//        }
+//        }
