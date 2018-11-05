@@ -19,7 +19,10 @@ public class SignIn extends AppCompatActivity {
    private   EditText password;
     private FirebaseAuth firebaseAuth;
     private Button login;
+<<<<<<< HEAD
     private TextView signup;
+=======
+>>>>>>> e74b988d128a64d844e974f8f85222874567cd74
     private FirebaseAuth.AuthStateListener authListener;
 
     @Override
@@ -32,6 +35,7 @@ public class SignIn extends AppCompatActivity {
 
         firebaseAuth = FirebaseAuth.getInstance();
         login = (Button) findViewById(R.id.login) ;
+<<<<<<< HEAD
         signup = (TextView)  findViewById(R.id.signup);
 
         signup.setOnClickListener(new View.OnClickListener() {
@@ -53,6 +57,32 @@ public class SignIn extends AppCompatActivity {
          };
 
 
+=======
+
+         authListener = new FirebaseAuth.AuthStateListener() {
+            @Override
+            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
+            if(firebaseAuth.getCurrentUser() != null){
+
+                finish();
+                startActivity(new Intent(SignIn.this, Search.class));
+            }
+            }
+        };
+
+//
+//        public void onStart(){
+//        super.onStart();
+//        FirebaseUser user = firebaseAuth.getCurrentUser();
+//
+//        if(user != null)
+//        {
+//            finish();
+//            startActivity(new Intent(SignIn.this, Search.class));
+//
+//        }
+//        }
+>>>>>>> e74b988d128a64d844e974f8f85222874567cd74
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -78,7 +108,10 @@ public class SignIn extends AppCompatActivity {
                 });
     }
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> e74b988d128a64d844e974f8f85222874567cd74
 }
 
 
